@@ -6,3 +6,6 @@ class Task:
         self.due_date = due_date #ending date of the task
         self.status = status
         self.assigneed_to = assigned_to #id of the user who is assigned to the task
+        
+def update_status(self, new_status):
+    self.status = new_status
