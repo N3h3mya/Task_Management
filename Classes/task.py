@@ -9,3 +9,15 @@ class Task:
         
 def update_status(self, new_status):
     self.status = new_status
+    
+#Converted the Task object to a dictionary for json storage    
+def to_json(self):
+    return {
+        'id' : self.id,
+        'title': self.title,
+        'description': self.description,
+        'due_date': self.due_date,
+        'status': self.status,
+        'assigned_to': self.assigned_to
+        
+    }
