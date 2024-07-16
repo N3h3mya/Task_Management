@@ -3,21 +3,19 @@ class Task:
         self.id = id
         self.title = title
         self.description = description
-        self.due_date = due_date #ending date of the task
+        self.due_date = due_date  # Ending date of the task 
         self.status = status
-        self.assigneed_to = assigned_to #id of the user who is assigned to the task
-        
-def update_status(self, new_status):
-    self.status = new_status
-    
-#Converted the Task object to a dictionary for json storage    
-def to_json(self):
-    return {
-        'id' : self.id,
-        'title': self.title,
-        'description': self.description,
-        'due_date': self.due_date,
-        'status': self.status,
-        'assigned_to': self.assigned_to
-        
-    }
+        self.assigned_to = assigned_to  # ID of the user assigned to the task
+
+    def update_status(self, new_status):
+        self.status = new_status  
+
+    def to_json(self):
+        return {
+            'id': self.id,
+            'title': self.title,
+            'description': self.description,
+            'due_date': self.due_date,
+            'status': self.status,
+            'assigned_to': self.assigned_to
+        }  # Convert the Task object to a dictionary for JSON storage
