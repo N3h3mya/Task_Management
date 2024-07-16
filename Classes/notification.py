@@ -6,3 +6,6 @@ class Notification:
         
     def send_notification(self):
         print(f"Notification pour l'utilisateur {self.user_id}: {self.message}")
+        
+    def __str__(self):
+        return f"Notification({self.id}, User: {self.user_id}, Message: '{self.message}')"
