@@ -9,5 +9,10 @@ class Project:
         self.tasks.append(task)
         
     def remove_task(self, task):
-        self.tasks = [task for task in self.tasks if task.id != task.id]
+        self.tasks = [task for task in self.tasks if task.id != task.id] #Creates a new task list that does not contain the task with the ID task_id
         
+    def get_task(self, task_id):
+        for task in self.tasks:
+            if task.id == task_id:
+                return task  #Goes through all the tasks and returns the one with the ID that matches task_id.
+
