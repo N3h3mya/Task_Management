@@ -16,3 +16,5 @@ class Project:
             if task.id == task_id:
                 return task  #Goes through all the tasks and returns the one with the ID that matches task_id.
 
+    def __str__(self):
+                return f"Project({self.id}, '{self.name}', {len(self.tasks)} Tasks)"
