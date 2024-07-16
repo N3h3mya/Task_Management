@@ -4,3 +4,5 @@ class User:
         self.username = username
         self.email = email
         
+    def assign_task(self, task):
+        task.assigned_to = self.id # Assigns a task to the user
