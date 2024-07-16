@@ -8,3 +8,6 @@ class Project:
     def add_task(self, task):
         self.tasks.append(task)
         
+    def remove_task(self, task):
+        self.tasks = [task for task in self.tasks if task.id != task.id]
+        
